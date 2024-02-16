@@ -10,6 +10,7 @@
     min-height: 400px;
     color: white;
     margin: 0px;
+    background-image: url(../images/homebg.jpg);
 }
 
 .contact-info {
@@ -39,7 +40,9 @@
     margin-top: 10px;
     color: rgb(74, 73, 73);
 }
-
+.contact-detail span{
+    margin-left: 10px;
+}
 .contact-detail svg {
     width: 24px;
     height: 24px;

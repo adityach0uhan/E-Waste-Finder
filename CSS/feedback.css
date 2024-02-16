@@ -25,7 +25,8 @@ header h1{
     margin-bottom: 15px;
 }
 
-.feedback-item p {
+.feedback-item div {
     line-height: 1.5;
     color: gray;
+    font-size: 1.5rem;
 }
