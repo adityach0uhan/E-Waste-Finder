@@ -117,48 +117,25 @@ button {
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px 15px;
-    background-image: url(../image/bg6.jpeg);
-
     background-size: cover;
+}
+.card1 {
+    background-image: url(../images/bg5.jpeg);
 }
 
 .card-1 {
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px 25px;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin: 10px 15px;
-    background-image: url(../image/bg5.jpeg);
-    background-size: cover;
+ 
+    background-image: url(../images/bg6.jpeg);
 }
 
 .card-2 {
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px 25px;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin: 10px 15px;
-    background-image: url(../image/bg7.jpeg);
-    background-size: cover;
+   
+    background-image: url(../images/bg7.jpeg);
 }
 
 .card-3 {
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px 25px;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin: 10px 15px;
-    background-image: url(../image/bg8.jpeg);
-    background-size: cover;
+    background-image: url(../images/bg9.jpeg);
+    object-fit: cover;
 }
 
 

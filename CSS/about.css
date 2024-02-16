@@ -1,0 +1,13 @@
+main {
+    padding: 20px;
+  }
+  
+  .about {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about h2 {
+    color: #007f5f;
+  }
+  
