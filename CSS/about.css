@@ -1,24 +1,21 @@
 main {
     padding: 20px;
   }
-  
-  .about {
-    max-width: 800px;
-    margin: 0 auto;
-    height: 600px;
+  #about1{
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -20px;
   }
-  
-  .about h2 {
-    color: rgb(38, 221, 53);
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    font-size: 60px;
-    display: inline-block;
-
+  #aboutsection{
+    display: flex;
   }
-  .about p{
+  #about-content{
+    font-size: 30px;
+    padding: 50px 70px;
+    font-weight: 500;
     color: gray;
-    font-size: 18px;
+    margin: auto;
   }
-  
+  #right-image{
+margin-top: 40px;
+  }
