@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/about.css">
     <link rel="stylesheet" href="./CSS/services.css">
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/feedback.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Martian+Mono&family=Open+Sans:wght@400;500&family=Roboto+Mono&family=Ubuntu:wght@300;500&display=swap');
@@ -18,30 +19,41 @@
 
 <body>
 
-
-    <div class="container">
-        <div id="wrapper">
-
-                <a href="#" class="navbar-item">Home</a>
-                <a href="#about" class="navbar-item">About Us</a>
-                <a href="#service" class="navbar-item">Services</a>
-                <a href="#contact" class="navbar-item">Contact Us</a>
-
-        </div>
-    </div>
+  <main class="main-container">
+    <header id="nav">
+        <!-- <div class="logo-container"><img src="./assets/images/surajlogo.png" alt="Suraj Verma"></div> -->
+        <div class="logo-container"><img src="./images/logo.png" alt="Suraj Verma"></div>
+    
+        <nav>
+          <div class="nav-element"><a href="#home"><span>Home</span></a></div>
+          <!-- <a class="nav-element" href="./about/adout.html"><span>About</span></a> -->
+          <div class="nav-element"><a href="#about1"><span>About</span></a></div>
+          <div class="nav-element"><a href="#project"><span>Projects</span></a></div>
+    
+          <div class="nav-element"><a href="#contact"><span>Contact Me</span></a></div>
+    
+        </nav>
+      </header>
     <div class="row">
         <div class="col">
             <div class="flex">
-                <div class="header">E-Waste Finder</div>
-                
+                <div class="header">
+                 
+                    <div>E-Waste Finder</div>
+                    <div class="slogan flex"> Recycle the Future, Dispose of E-waste Responsibly  
+                        <button class="btn btne">Explore more</button>
+                    </div>
+
+
+                </div>
                 <div class="links">
-                    <a href="form.html" target="_blank">
+                    <a href="./HTML/form.html" target="_blank">
                         <button type="button">Sell Product</button>
                     </a>
-                    <a href="information.html" target="_blank">
+                    <a href="./HTML/product.html" target="_blank">
                         <button type="button">Our Products</button>
                     </a>
-                    <a href="credit.html">
+                    <a href="./HTML/credit.html">
                         <button type="button">Credit Points</button>
                     </a>
                 </div>
@@ -58,9 +70,14 @@
     </div>
 
     </div>
-    <div class="para">
+        <div class="para">
+    <!-- <marquee > -->
+
         <p>E-waste: Where old technology meets new opportunities for sustainability </p>
-    </div>
+    <!-- </marquee> -->
+
+        </div>
+  </main>
 
     <hr>
 
@@ -84,6 +101,70 @@
             <li>Transparent and ethical recycling process</li>
             <li>Contribution to a cleaner and safer environment</li>
         </ul>
+    </section>
+   
+    <hr>
+
+    <header>
+        <h1>Feedback</h1>
+    </header>
+    <section class="feedback-container">
+        <div class="feedback-item">
+            <h2>John Doe</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at eleifend mauris. Nulla facilisi.</p>
+        </div>
+        <div class="feedback-item">
+            <h2>Jane Smith</h2>
+            <p>Integer aliquam ex sit amet dui feugiat, vel tristique ligula vehicula. Phasellus convallis convallis ante, nec tincidunt justo aliquam et.</p>
+        </div>
+        <div class="feedback-item">
+            <h2>Alex Johnson</h2>
+            <p>Vivamus auctor ultrices lacus, id pretium odio gravida sit amet. Fusce finibus efficitur ex, a pretium lectus venenatis vel.</p>
+        </div>
+    </section>
+ 
+       <hr> 
+
+    <section>
+       
+    <div class="contact-container">
+        <div class="contact-info">
+            <h1>Get in touch:</h1>
+            <p>Fill in the form to start a conversation</p>
+            <div class="contact-detail">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                    <path d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Acme Inc, Street, State, Postal Code</span>
+            </div>
+            <div class="contact-detail">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone">
+                    <path d="M23 1l-6 6"></path>
+                    <path d="M17 11l6-6"></path>
+                </svg>
+                <span>+44 1234567890</span>
+            </div>
+            <div class="contact-detail">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                    <path d="M22 3.21l-10 7.45-10-7.45"></path>
+                    <path d="M22 12.75l-9-6.75-9 6.75"></path>
+                    <path d="M22 3.21l-9 9"></path>
+                    <path d="M3 12.75l9 6.75"></path>
+                    <path d="M3 21.21l10-9.75 10 9.75"></path>
+                    <path d="M12 22.5l-9-7.5h18l-9 7.5z"></path>
+                </svg>
+                <span>info@acme.org</span>
+            </div>
+        </div>
+        <form class="contact-form" method="post" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="64f45ab5-d807-491d-aff4-5ff2af33c285">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="number" placeholder="Contact Number" required>
+            <button type="submit" >Submit</button>
+        </form>
+    </div>
     </section>
 
     <footer class="footer">

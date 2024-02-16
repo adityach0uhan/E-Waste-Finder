@@ -1,0 +1,21 @@
+.feedback-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feedback-item {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feedback-item h2 {
+    margin-bottom: 10px;
+}
+
+.feedback-item p {
+    line-height: 1.5;
+}

@@ -9,9 +9,77 @@
 }
 
 body {
-    background-color: #24262b;
+    /* background-color: #24262b; */
+    background-image: url(../images/homebg.jpg);
+    background-repeat: no-repeat;
+  
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+:root {
+    --thin-paragraph: 'Kanit', sans-serif;
+    --thick-navbar-font: 'Noto Sans', sans-serif;
+    --main-font: 'Rubik', sans-serif;
+}
+
+
+
+.logo-container {
+    margin: 0 20px;
+    height: 80px;
+    width: 80px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    /* background-color: #c8dcea; */
+    background-color: var(--white);
+    height: 15%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--light);
+    box-shadow: 0px 1px 4px var(--gray) ;
+    margin-top: -17px;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav a span {
+    font-size: 1.7rem;
+}
+.nav-element span{
+    text-decoration: none;
+    padding: 0 8px;
+    color: black;
+    /* font-family: var(--thick-navbar-font); */
+     font-family: 'Ubuntu', sans-serif;;
+    transition: text-decoration 0.5s ease-in-out;
+}
+.nav-element a{
+    height: 100%;
+    text-decoration: none;
+}
+.nav-element a:hover{
+    text-decoration: none;
+    color: rgb(19, 221, 19);
+
+}
+.nav-element span:hover{
+    color: var(--orange);
+} 
+
+
 
 .flex {
     display: flex;
@@ -26,9 +94,21 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Mono', monospace; */
     font-family: 'Ubuntu', sans-serif; 
+   width: 619px;
+}
+.slogan{
+    font-size: 25px;
+    color: gray;
+    margin-top: 10px;
+    flex-direction: column;
 
 }
-
+.btne{
+    background-color:  rgba(19, 221, 19,0.68);
+    width: 160px;
+    font-size: 20px;
+    height: 50px;
+}
 .container{
     margin: auto;
     text-align: center;
@@ -134,7 +214,7 @@ button {
 }
 
 .card-3 {
-    background-image: url(../images/bg9.jpeg);
+    background-image: url(../images/bg8.jpeg);
     object-fit: cover;
 }
 
@@ -153,7 +233,8 @@ button {
 
 .para p {
     font-size: 1.7rem;
-    color: rgba(177, 255, 161, 0.897);
+    color: #4d4c4c;
+    font-weight: bold;
 }
 .container2{
      display: flex;
