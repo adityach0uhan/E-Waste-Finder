@@ -1,5 +1,20 @@
+
+// const express = require('express')
+// const app = express()
+// app.get('/data', (req, res) => {
+//     res.json({
+//         name: 'cors in node.js',
+//         language: 'JavaScript',
+//         server: 'Express.js',
+//     })
+// })
+
+
 const app = require('express')();
+const PORT = 8080
 const http = require('http').Server(app);
+const cors = require('cors')
+app.use(cors({ origin: 'http://127.0.0.1:5500' }))
 
 const mongoose= require('mongoose');
 const bodyParser = require("body-parser");
@@ -18,7 +33,7 @@ const infoSchema ={
     dateOfPickup:String,
     Address : String,
 }
- 
+
 const user  = mongoose.model("info",infoSchema);
 
 app.get("/",function(req,res){
@@ -26,11 +41,11 @@ app.get("/",function(req,res){
 })
 
 // app.get("/thankyou",function(req,res){
-//     res.sendFile(__dirname+"/index.html");
-// })
-app.post("/",function(req,res){
-    
-    
+    //     res.sendFile(__dirname+"/index.html");
+    // })
+    app.post("/",function(req,res){
+        
+        
     async function insert(){
         user.create({
             name:req.body.name,
@@ -44,11 +59,18 @@ app.post("/",function(req,res){
         })
         
     }
+    res.redirect('/');
     insert();
-     res.redirect('/');
- })
-             
-http.listen(5500,function(){
-    console.log("server is running");
-});
+})
+
+app.listen(PORT, () => {
+    console.log(`Server started on port ${PORT}`)
+})
+const options = {
+    origin: 'http://127.0.0.1:5500',
+    methods: 'GET, PUT',
+  }
+  
+  app.use(cors(options))
+  
 
