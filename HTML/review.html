@@ -58,7 +58,23 @@
             padding: 10px;
             border-radius: 5px;
             border: 1px solid #ccc;
+            margin-top: 20px;
+            align-items: center;
         }
+        .pages{
+            display: flex;
+
+        }
+        .thanks{
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+        .thanks a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+        }
+        
     </style>
 </head>
 <body>
@@ -69,9 +85,11 @@
             <input type="text" id="username" name="username" required>
             <label for="review">Review:</label>
             <textarea id="review" name="review" required></textarea>
+            <div class="pages">
             <input type="submit" value="Submit Review">
+            <div class="thanks"><a href="thanks.html">Thanks</a></div>
+        </div>
         </form>
-
         <div id="reviews">
             <!-- Reviews will be displayed here -->
         </div>
