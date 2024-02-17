@@ -14,7 +14,7 @@ const app = require('express')();
 const PORT = 8080
 const http = require('http').Server(app);
 const cors = require('cors')
-app.use(cors({ origin: 'http://127.0.0.1:5500' })) 
+// app.use(cors({ origin: 'http://127.0.0.1:5500' })) 
 
 const mongoose= require('mongoose');
 const bodyParser = require("body-parser");
@@ -67,11 +67,11 @@ app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`)
 })
 const options = {
-    origin: 'Tera host waala Link dal dena idhar 👍 ',
-    methods: 'GET, PUT , POST , DELETE ',
+    origin: 'http://127.0.0.1:5500',
+    methods: ['GET', 'PUT ', 'POST ', 'DELETE '],
     allowedHeaders:['Content-Type'],
   }
-  
+
   app.use(cors(options))
   
 
